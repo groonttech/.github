@@ -1,0 +1,76 @@
+name: "Feature Request \U0001F3A8"
+description: "New feature request."
+title: "Feature: "
+labels: ["triage", "feature"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ### :warning: Please, make sure you're creating an issue for the right repository!
+
+        ---
+
+  - type: checkboxes
+    attributes:
+      label: "Is there an existing issue for this?"
+      description: "Please search [here](../issues?q=is%3Aissue) to see if an issue already exists for the feature you are requesting."
+      options:
+      - label: "I have searched the existing issues"
+        required: true
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: "Feature Description"
+      description: "Provide a clear and concise description of the feature. What problem does it solve? What value does it bring?"
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: "User Story"
+      description: "Helps define the user’s needs."
+      placeholder: "As a [type of user], I want [goal] so that [reason]..."
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Specific requirements that must be met for the feature to be considered complete."
+      placeholder: |
+        - [ ] Criteria 1: Describe the first requirement that needs to be met.
+        - [ ] Criteria 2: Describe the second requirement.
+        - [ ] Criteria 3: Continue for each criterion.
+
+  - type: textarea
+    attributes:
+      label: "Mockups / Design"
+      description: "Include any links to design mockups, wireframes, or screenshots."
+
+  - type: textarea
+    attributes:
+      label: "Technical Notes"
+      description: "Any important technical considerations or constraints, relevant documentation or resources."
+
+  - type: textarea
+    attributes:
+      label: "Dependencies"
+      description: "List any dependencies, such as other features, services, or teams."
+
+  - type: textarea
+    attributes:
+      label: "Testing Strategy"
+      description: "Outline how this feature will be tested. This can include unit tests, integration tests, end-to-end tests, etc."
+
+  - type: textarea
+    attributes:
+      label: "Risks and Mitigations"
+      description: "Identify potential risks and how they will be mitigated."
+
+  - type: textarea
+    attributes:
+      label: "Additional Notes"
+      description: "Any other information that would be helpful for those working on this feature."
